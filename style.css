@@ -1,0 +1,17 @@
+header {
+  text-align: center;
+}
+
+img {
+  height: 10%;
+  width: 50%;
+}
+
+article {
+  margin: auto;
+  border: 1px solid black;
+  margin-bottom: 2em;
+  width: 80%;
+  text-align: center;
+  padding: 20px;
+}
