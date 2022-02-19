@@ -167,10 +167,32 @@
           </tr>
         </table>
       </div>
+      <button id="send-me-message">Send me message</button>
+    </aside>
+
+    <aside class="modal">
+      <div class="modal-form">
+        <form
+          action="https://api.sheetmonkey.io/form/hdzcdRq4RcKnkYqrqEjHsj"
+          method="post"
+        >
+          <label>Your Name: <input type="text" name="Name" required /></label>
+          <label>Message: <input type="text" name="Message" required /></label>
+          <input
+            type="hidden"
+            name="Created"
+            value="x-sheetmonkey-current-date-time"
+          />
+          <input id="send" type="submit" value="Send" />
+        </form>
+        <button id="close">Close</button>
+      </div>
     </aside>
 
     <footer>
       <p>Created from Cimahi with love ❤️‍🔥</p>
     </footer>
   </body>
+
+  <script src="./script.js"></script>
 </html>
