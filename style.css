@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Quicksand:wght@400;700&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'IBM Plex Mono', monospace;
 }
@@ -6,27 +10,34 @@ header {
   margin: auto;
   text-align: center;
   width: 80%;
+  display: inline;
 }
 
 img {
   height: 10%;
   width: 50%;
 }
-/* .article-container {
+nav {
+  position: sticky;
+  top: -2px;
   margin: auto;
-  width: 80%;
-  border: 2px solid black;
+  margin-bottom: 20px;
+  margin-right: 40px;
 }
-.article-container > h2 {
-  border: 1.5px solid black;
+
+nav[stuck] {
+  text-align: right;
+  margin-right: 0px;
+}
+nav > ul {
+  list-style-type: none;
+  /* margin-right: 50px; */
+}
+
+nav > ul > li {
+  display: inline-block;
   text-align: center;
-  width: 300px;
-  font-size: 0.8em;
-  margin-left: 20%;
-  margin-bottom: 0px;
-  border-radius: 2px;
-  background-color: #fa9ba2;
-} */
+}
 
 article {
   border: 1.5px solid black;
@@ -77,6 +88,13 @@ a {
 }
 #etherscan {
   background-color: #c3cfd1;
+}
+
+#projects-nav {
+  background-color: #faae2b;
+}
+#contact-nav {
+  background-color: #fe98a3;
 }
 a:hover {
   box-shadow: 3px 3px black;

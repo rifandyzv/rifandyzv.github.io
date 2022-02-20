@@ -9,3 +9,10 @@ trigger.onclick = function () {
 close.onclick = function () {
   modal.style.display = 'none'
 }
+
+const navObserver = new IntersectionObserver(
+  ([e]) => e.target.toggleAttribute('stuck', e.intersectionRatio < 1),
+  { threshold: [1] }
+)
+
+navObserver.observe(document.querySelector('nav'))

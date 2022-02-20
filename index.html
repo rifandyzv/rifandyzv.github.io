@@ -9,16 +9,21 @@
   </head>
   <body>
     <header>
-      <h1>Rifandy's Portofolio</h1>
+      <h1>Rifandy's Portfolio</h1>
       <p>
         Hello, I'm Rifandy but you can call me Andy. Here's my personal learning
-        portofolio, hope you can give me some feedbacks or you can contribute to
+        portfolio, hope you can give me some feedbacks or you can contribute to
         one of my projects.
       </p>
-      <nav></nav>
+      <nav>
+        <ul>
+          <li><a href="#articles" id="projects-nav">Projects</a></li>
+          <li><a href="#contact" id="contact-nav">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <article>
+      <article id="articles">
         <h2>Aku Pasti Bisa 7.0 Landing Page</h2>
         <img src="./assets/apb.png" alt="apb" />
         <p>
@@ -139,36 +144,36 @@
           >Etherscan</a
         >
       </article>
+      <aside id="contact">
+        <h2>Contact</h2>
+        <div class="contact-container">
+          <img src="./assets/me.jpeg" alt="me" />
+          <table>
+            <tr>
+              <th>Name</th>
+              <td>M Rifandy Zulvan</td>
+            </tr>
+            <tr>
+              <th>Github</th>
+              <td>rifandyzv</td>
+            </tr>
+            <tr>
+              <th>Twitter</th>
+              <td>@rifandyzv</td>
+            </tr>
+            <tr>
+              <th>Instagram</th>
+              <td>@rifandyzulvan</td>
+            </tr>
+            <tr>
+              <th>Phone</th>
+              <td>+62 8515-6969-420</td>
+            </tr>
+          </table>
+        </div>
+        <button id="send-me-message">Send me message</button>
+      </aside>
     </main>
-    <aside>
-      <h2>Contact</h2>
-      <div class="contact-container">
-        <img src="./assets/me.jpeg" alt="me" />
-        <table>
-          <tr>
-            <th>Name</th>
-            <td>M Rifandy Zulvan</td>
-          </tr>
-          <tr>
-            <th>Github</th>
-            <td>rifandyzv</td>
-          </tr>
-          <tr>
-            <th>Twitter</th>
-            <td>@rifandyzv</td>
-          </tr>
-          <tr>
-            <th>Instagram</th>
-            <td>@rifandyzulvan</td>
-          </tr>
-          <tr>
-            <th>Phone</th>
-            <td>+62 8515-6969-420</td>
-          </tr>
-        </table>
-      </div>
-      <button id="send-me-message">Send me message</button>
-    </aside>
 
     <aside class="modal">
       <div class="modal-form">
