@@ -10,8 +10,10 @@ close.onclick = function () {
   modal.style.display = 'none'
 }
 
+// Change appearance of sticky element when it reaches sticky position
+// References : https://codepen.io/anon/pen/vqyQEK
 const navObserver = new IntersectionObserver(
-  ([e]) => e.target.toggleAttribute('stuck', e.intersectionRatio < 1),
+  ([e]) => e.target.toggleAttribute('sticky', e.intersectionRatio < 1),
   { threshold: [1] }
 )
 
